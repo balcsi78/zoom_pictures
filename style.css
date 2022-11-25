@@ -1,0 +1,34 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.zoom {
+    width: 1005;
+    height: auto;
+    display: block;
+}
+
+.zoombox {
+    border: solid;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.zoomed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 200%;
+    width: 200%; /* duplájára nagyítjuk */
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
